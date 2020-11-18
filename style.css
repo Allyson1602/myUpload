@@ -1,0 +1,68 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+img{
+    object-fit: cover;
+}
+.entrada{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+input, .inputImage{
+    width: 200px !important;
+    height: 200px !important;
+}
+input{
+    position: absolute;
+    top: 0;
+    margin: 10px 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.inputImage{
+    border: 3px dashed #000;
+    padding: 9px;
+    
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+#boximagem{
+    display: inline-block;
+}
+.imagem{
+    width: 150px;
+    height: 100px;
+
+    margin: 5px;
+
+    box-shadow: 5px 5px 0px #28a745 ;
+    border-radius: 5px;
+}
+.preview{
+    border: 2px solid #28a745 !important;
+    border-radius: 10px;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+.alterar{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #28a745;
+    padding: 4px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.alterar:hover{
+    background-color: #28a745;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        height: 100vh;
+    }
+}
